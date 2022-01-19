@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Athira</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Merriweather:ital@1&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+<body>
+	<div class="center">
+		<div style="text-align: center">
+			<h2>CounterApp</h2>
+			<h1>78</h1>
+			<button onclick="increment()"><i class="fas fa-plus-circle"></i> Increment</button>
+			<p id="root"></p>
+			<button onclick="decrement()"><i class="fas fa-minus-circle"></i> Decrement</button>
+		</div>
+	</div>
+	
+	<script>
+		var data=0;
+		function increment(){
+    		let d=data++;
+    		document.getElementById("root").innerText=d;
+		}
+		function decrement(){
+    		data=data-1;
+    		document.getElementById("root").innerText=data;
+		}
+	</script>
+	
+</body>
+</html>
